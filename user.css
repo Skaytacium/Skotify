@@ -21,17 +21,27 @@
   filter: brightness(0) saturate(100%) invert(93%) sepia(6%) saturate(1357%) hue-rotate(353deg) brightness(95%) contrast(93%);;
 }
 
+/* Album cover button bg */
+.CoverSlotExpanded__actionButton,
+.CoverSlotExpanded__actionButton:hover {
+  background-color: #282828;
+}
+.main-coverSlotCollapsed-expandButton,
+.main-coverSlotCollapsed-expandButton:hover {
+  background-color: #282828;
+}
+
 /* Changes track list hover */
 .main-trackList-selected,
 .main-trackList-trackListRow:hover,
 .main-trackList-trackListRow:focus-within {
-  background-color: var(--spice-text) !important;
+  background-color: #EBDBB2 !important;
 }
 .main-trackList-selected span[aria-label="Explicit"],
 .main-trackList-trackListRow:hover span[aria-label="Explicit"],
 .main-trackList-trackListRow:focus-within span[aria-label="Explicit"] {
-  color: var(--spice-text);
-  background-color: var(--spice-main) !important;
+  color: #EBDBB2;
+  background-color: #282828 !important;
 }
 .main-trackList-selected .main-addButton-button,
 .main-trackList-trackListRow:hover .main-addButton-button,
@@ -48,30 +58,30 @@
 .main-trackList-selected .main-trackList-rowDuration,
 .main-trackList-trackListRow:hover .main-trackList-rowDuration,
 .main-trackList-trackListRow:focus-within .main-trackList-rowDuration {
-  color: var(--spice-main) !important;
+  color: #282828 !important;
 }
 
 /* Change explicit color */
 span[aria-label="Explicit"] {
-  background-color: var(--spice-text);
+  background-color: #EBDBB2;
 }
 
 /* Changes play button and triple dots */
 .main-trackList-rowImagePlayButton {
-  color: var(--spice-main);
+  color: #282828;
 }
 button.main-trackList-rowMoreButton {
-  color: var(--spice-main) !important;
+  color: #282828 !important;
 }
 
 /* Easier to see search things */
 div.main-card-card + div > button[aria-label="Remove"] {
-  background-color: var(--spice-main);
+  background-color: #282828;
 }
 
 /* Search bar fix */
 .x-searchInput-searchInputInput {
-  background-color: var(--spice-text);
+  background-color: #EBDBB2;
 }
 
 /* Thinner nav bar */
@@ -90,25 +100,27 @@ div.main-card-card + div > button[aria-label="Remove"] {
 .main-home-homeHeader {
   background-image: none;
   transition: none;
-  background-color: var(--spice-main) !important;
+  background-color: #282828 !important;
 }
 
 /* Change bar gradient */
 .main-topBar-overlay {
-  background-color: var(--spice-main) !important;
+  background-color: #282828 !important;
 }
 
 /* Removes background from playlists */
 .main-entityHeader-backgroundColor {
-  background-color: var(--spice-main) !important;
+  background-color: #282828 !important;
 }
 .main-actionBarBackground-background {
-  background-color: var(--spice-main) !important;
+  background-color: #282828 !important;
 }
 
 /* Add bg to time elapsed */
 .playback-bar__progress-time-elapsed.main-type-finale {
-  background-color: var(--spice-main);
+  background-color: #282828;
+  border-radius: 5px;
+  text-align: center;
 }
 
 /* Change play button colors */
@@ -119,7 +131,7 @@ div.main-card-card + div > button[aria-label="Remove"] {
 
 /* Change progress bar bg */
 .x-progressBar-progressBarBg {
-  background-color: var(--spice-main);
+  background-color: #282828;
 }
 
 /* Removes background from playlist images */
@@ -142,12 +154,12 @@ div.main-card-card + div > button[aria-label="Remove"] {
 
 /* Different background for home reccomendations */
 div.main-shelf-topRow + div > div {
-  background-color: var(--spice-main);
+  background-color: #282828;
 }
 
 /* No transition for home reccomendations */
 div.main-shelf-topRow + div > div:hover {
-  background-color: var(--spice-main);
+  background-color: #282828;
 }
 
 /* Remove box shadow from feed */
@@ -162,14 +174,14 @@ div.main-shelf-topRow + div > div:hover {
 
 /* Change prompt background */
 div[aria-label="Already added"] > div {
-  background-color: var(--spice-main);
-  color: var(--spice-text);
+  background-color: #282828;
+  color: #EBDBB2;
 }
 
 /* Change "Add anyway" color */
 div[aria-label="Already added"] > div > div > button.main-button-tertiary {
-  background-color: var(--spice-main);
-  color: var(--spice-text);
+  background-color: #282828;
+  color: #EBDBB2;
 }
 
 /* Make recommendations well rounded */
@@ -179,12 +191,12 @@ img.main-image-image[loading="lazy"][aria-hidden="false"] {
 
 /* Makes it white when hovering */
 .main-rootlist-rootlistItem:hover > a > span {
-  color: var(--spice-main);
+  color: #282828;
 }
 
 /* Gives it a bg while hovering and rounds right corners */
 .main-rootlist-rootlistItem:hover {
-  background-color: var(--spice-text);
+  background-color: #EBDBB2;
   border-radius: 0 8px 8px 0;
 }
 
@@ -194,7 +206,7 @@ img.main-image-image[loading="lazy"][aria-hidden="false"] {
 .main-rootlist-expandArrow:focus-within,
 .main-rootlist-expandArrow:hover {
   color: transparent;
-  background-color: var(--spice-text);
+  background-color: #EBDBB2;
   width: 25px;
   height: 25px;
   margin-top: auto;
@@ -203,7 +215,7 @@ img.main-image-image[loading="lazy"][aria-hidden="false"] {
 
 /* Gives it a bg while hovering */
 .main-rootlist-rootlistItem:hover .main-rootlist-expandArrow {
-  background-color: var(--spice-main);
+  background-color: #282828;
 }
 
 /* Removes box shadows from card images */
@@ -217,13 +229,13 @@ div.main-gridContainer-gridContainer > div > div > div > div {
 
 /* Gives liked songs a different bg */
 div.main-gridContainer-gridContainer > div[class^="main-heroCard-card"] {
-  background: var(--spice-main);
+  background: #282828;
 }
 
 /* Change "Don't add" color */
 div[aria-label="Already added"] > div > div > button.main-button-primary {
-  background-color: var(--spice-main);
-  color: var(--spice-text);
+  background-color: #282828;
+  color: #EBDBB2;
 }
 
 /* Make scrollbar transparent */
@@ -233,10 +245,10 @@ div[aria-label="Already added"] > div > div > button.main-button-primary {
 
 /* Changes queue tab bar bg */
 .queue-tabBar-header > a {
-  --spice-tab-active: var(--spice-text);
+  --spice-tab-active: #EBDBB2;
 }
 .oaNVBli46GtVjaQKB15g {
-  color: var(--spice-main);
+  color: #282828;
 }
 
 /* Remove gradients from playlist */
@@ -255,7 +267,7 @@ div[aria-label="Already added"] > div > div > button.main-button-primary {
 
 /* Make liked heart a proper color */
 figure.main-avatar-avatar + div > svg[role="img"] {
-  color: var(--spice-main);
+  color: #282828;
 }
 
 /* No gradient */
@@ -265,7 +277,7 @@ figure.main-avatar-avatar + div > svg[role="img"] {
 
 /* Proper divider between root list and navigation bar */
 /* .main-rootlist-rootlistDivider {
-  background-color: var(--spice-text);
+  background-color: #EBDBB2;
   margin: 8px 0 0 0;
 } */
 
@@ -292,7 +304,7 @@ div[role="search"] + button,
 button[aria-label="Queue"],
 /* Add friends button */
 button[aria-label="Add Friends"] {
-  color: var(--spice-text);
+  color: #EBDBB2;
 }
 
 /* From the sleek theme */
@@ -322,7 +334,8 @@ button[aria-label="Add Friends"] {
   opacity: 0;
   position: absolute;
   bottom: 13px;
-  left: 0;
+  /* Changing this because it looks bad on high brightness album covers */
+  left: 5px;
   transition-duration: 0.15s;
 }
 
@@ -360,7 +373,7 @@ button[aria-label="Add Friends"] {
 /* change appearance of play-button */
 .main-playPauseButton-button {
   background-color: var(--spice-player);
-  color: var(--spice-text);
+  color: #EBDBB2;
   transition-duration: 0.15s !important;
 }
 
