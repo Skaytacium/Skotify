@@ -8,6 +8,13 @@
   font-size: 0px;
 }
 
+/* Context menu BG */
+.main-contextMenu-menuItemButton[aria-expanded=true],
+.main-contextMenu-menuItemButton:hover {
+	background-color: #EBDBB2;
+	color: #282828;
+}
+
 /* Make it horizontal */
 #spicetify-sticky-list {
   margin-left: auto;
