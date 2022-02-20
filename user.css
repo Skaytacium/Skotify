@@ -8,6 +8,23 @@
   font-size: 0px;
 }
 
+/* Remove shadow from cover art */
+div.cover-art.shadow {
+  box-shadow: none;
+}
+
+/* Removes "Lyrics from musicmatch" */
+div.main-view-container__scroll-node-child div.hW9km7ku6_iggdWDR_Lg p.main-type-mesto[as="p"] {
+  color: #282828;
+}
+
+/* Change lyrics BG */
+div.main-view-container__scroll-node-child div.hW9km7ku6_iggdWDR_Lg {
+  --lyrics-color-active:#ebdbb2 !important;
+  --lyrics-color-inactive: #ebdbb2 !important;
+  --lyrics-color-background: #282828 !important;
+}
+
 /* Context menu BG */
 .main-contextMenu-menuItemButton[aria-expanded=true],
 .main-contextMenu-menuItemButton:hover {
